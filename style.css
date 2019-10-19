@@ -2,16 +2,21 @@ body
 {
  background-image: url('back.jpg');
  background-size: cover;
+ width:100%;
+ height: 100%;
 }
 .h1
 {
 	font-family: 'ZCOOL XiaoWei', serif;
-	padding-left: 20px;
+}
+.title
+{
+  display: inline-block;
+  padding-left: 20px;
 }
 .tech
 {
-	padding-left: 20px;
-	padding-top: 10px;
+  margin-top: -12px;
 }
 .mail
 {
@@ -19,33 +24,36 @@ body
 }
 .image-circle
 {
-	margin-left: -10px;
 	width: 140px;
 	height: 150px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  vertical-align: top;
 }
 .profile
 {
-	background-color: #e6dcdc66;
-	margin-top: 20px;
-	padding-left: 20px;
-	height:150px;
-	margin-left: 20px;
-	margin-right: 65px;
+  background-color: #e6dcdc66;
+  width:100%;
 }
 #profile
 {
-	filter: brightness(120%);
+	filter: brightness(100%);
 }
-.col2
+.contact
 {
-	margin-left: 35px;
-	background-color: #1a1a7d87;
-	height: 1050px;
+  width:100%;
+  background-color: #1a1a7d87;
+}
+.Education{
+  width: 100%;
+  background-color:#008000a6;
 }
 .contact-heading
 {
 	color: white;
 	padding-bottom: 15px;
+  padding-left: 15px;
 	font-family: 'Righteous', cursive;
 }
 .contact-details
@@ -58,7 +66,13 @@ body
 {
 	color: white;
 	padding-bottom: 15px;
+  padding-left: 15px;
 	font-family: 'Righteous', cursive;
+}
+.Project-heading
+{
+  padding-top: 15px;
+  padding-left: 15px;
 }
 .skill-details,.Language-details
 {
@@ -69,12 +83,17 @@ body
 {
   color: white;
   margin-left: 35px;
-  margin-right: 35px;
+  margin-right: 0px;
   padding-bottom: 25px;
 }
 .svu,.svgp
 {
   font-family: 'Crimson Text', serif;
+}
+.flex-container
+{
+  display: flex;
+  flex-wrap: wrap;
 }
 .col-university
 {
@@ -88,27 +107,13 @@ body
 .Certification-details
 {
 	color: white;
-	padding-bottom: 15px;
-
-}
-.col3
-{
-	background-color: #008000a6;
-	height: 1050px;
 }
 .education,.education2,.education3
 {
-  height: 100px;
+  height: 100%;
   border-bottom: 2px solid white;
   border-radius:  2px 2px 2px 2px;
-}
-.education2
-{
-  height: 145px;
-}
-.education3
-{
-  height: 185px;
+  margin-right: 30px;
 }
 .cse,.cse1
 {
@@ -121,21 +126,51 @@ body
 }
 .connect
 {
-	margin-left: 35px;
 	text-align: center;
-	margin-right: 80px;
+  margin-right:0px ;
+  background-color: #e6dcdc66;
 }
 .col4
 {
-	background-color: #e6dcdc66;
+  width: 100%;
 	height: 180px;
-	margin-bottom: 20px;
 }
-.linkedin,.instagram,.github,.facebook,.twitter
+.linkedin:hover,.instagram:hover,.github:hover,.facebook:hover,.twitter:hover,.gmail:hover
 {
 	margin-right: 10px;
+  transform: scale(1.5);
 }
 .Connect-details
 {
 	text-align: center;
+}
+@media screen and (max-width: 733px){
+  .image-circle{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 890px)
+{
+  .contact
+  {
+    width: 40%;
+  }
+  .Education
+  {
+    width: 60%;
+  }
+}
+@media screen and (max-width:889px){
+  .university{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .col-svu{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
